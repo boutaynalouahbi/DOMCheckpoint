@@ -1,0 +1,176 @@
+/* Styles globaux */
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-transform: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*Déclaration de variables */
+:root{
+    --primary-color: #6E6E75;
+    --secondary-color: #f8906d;
+    --tertiary-color: #000;
+    --Quaternary-color :#fff;
+    --Quinary-color :#E1D7E0;
+}
+/*header */
+header{
+    width: 100%;
+    padding: 16px 0;
+}
+header .logo{
+    font-weight: 700;
+    font-size: larger;
+}
+header .logo span{
+   color: var(--secondary-color);
+}
+.nav-item{
+    margin:0 10px;
+}
+.nav-item a{
+   font-weight: 500;
+   font-size: 18px;
+}
+.nav-link{
+    color: var(--primary-color) !important;
+    font-size: 15px;
+    text-transform: capitalize !important;
+}
+.nav-link:hover ,.nav-link:active{
+    color: var(--secondary-color) !important;
+    }
+.links a{
+  margin: 0 10px;
+  color: var(--primary-color);
+}
+.links a i{
+    font-size: 22px;
+    
+}
+.links a:hover,.links a:active{
+ color: var(--secondary-color);
+ 
+  }
+.counter{
+    font-size: 8px;
+}
+.dropdown-menu{
+    background-color: var(--secondary-color);
+}
+.dropdown-item{
+   color: var(--Quaternary-color);
+}
+.dropdown-item:active,.dropdown-item:hover {
+    color: var(--tertiary-color);
+    background-color:  var(--Quaternary-color)
+ }
+ /*main */
+main{
+    width: 100%;
+}
+
+#section1{
+    background-color: var(--Quinary-color);
+    width: 100%;
+    
+}
+.btnshop:hover{
+   background-color: var(--secondary-color);
+   border-color: var(--secondary-color);
+}
+.title{
+    font-size: clamp(30px,5vw,60px); 
+    line-height: 1.5;
+}
+#Categories{
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+#Categories .conteneur div img{
+width:550px !important;
+height: 300px !important;
+
+}
+@media (max-width:1146px) {
+    #Categories .conteneur div img{
+        width:90vw !important;
+        height: 400px !important;
+        }
+  }
+@media (max-width:576px) {
+    #Categories .conteneur div img{
+        width:75vw !important;
+        height: 200px !important;
+        }
+  }
+#Categories .cat{
+   position: relative;
+  }
+#Categories .info{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+.info h5{
+    width: 70%;
+    font-weight: 800;
+}
+@media (max-width:1146px) {
+    .info h5{
+        width: 100%;
+        font-weight: 800;
+        font-size: 60px;
+        color: var(--tertiary-color);
+    }
+    #Categories .info{
+        position: absolute;
+        bottom: 30%;
+        left: 10%;
+    }
+  }
+  @media (max-width:576px) {
+    .info h5{
+        width: 100%;
+        font-weight: 800;
+        font-size: 24px;
+        color: var(--tertiary-color);
+    }
+    #Categories .info{
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+    }
+    .info button{
+        padding: 10px !important;
+    }
+  }
+#products{
+width: 100%;
+
+margin-top: 40px;
+}
+#cart{
+width: 100%;
+
+}
+.btnheart {
+    color: var(--primary-color);
+}
+.btnheart :hover ,.btnheart :active {
+    color: var(--secondary-color);
+}
+.btnheartactive {
+    color: var(--secondary-color) !important;
+}
+.counterlikes{
+    font-size: 8px;
+}
